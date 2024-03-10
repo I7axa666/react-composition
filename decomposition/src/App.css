@@ -1,5 +1,5 @@
 #root {
-  max-width: 1280px;
+ 
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -34,19 +34,28 @@
 }
 
 .card {
-  padding: 2em;
+  display: flex;
+}
+
+img {
+  width: 40px;
+  margin-right: 10px;
+
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .read-the-docs {
   color: #888;
 }
 
-.header {
+.header-new {
   display: flex;
 }
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 .nwes-filter, .filters {
@@ -55,12 +64,74 @@ ul {
 
 .date {
   margin: auto;
+  padding-left: 20px;
+  
 }
 
 li {
   margin-left: 20px;
+  padding: 0;
+}
+
+.news {
+  text-align: left;
 }
 
 .currency {
   display: flex;
+}
+
+.card-title {
+  display: flex;
+
+}
+
+.descList {
+  text-align: start;
+  margin: 0;
+}
+
+.textWithImg {
+  color: black;
+}
+
+.adv {
+  height: 50px;
+  border: 3px solid black;
+  background-image: url("https://ya.ru/images/search?pos=0&from=tabbar&img_url=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D10158393459633553&text=react+icon&rpt=simage&lr=14");
+  background-repeat: no-repeat;
+  background-size: contain;
+  flex-grow: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+}
+
+.logos {
+  width: 40px;
+  border: 2px solid black;
+
+  position: absolute;
+  left: -50px
+}
+
+.widgets {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-view {
+  margin: 10px;
 }

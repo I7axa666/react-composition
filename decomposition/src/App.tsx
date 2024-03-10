@@ -1,23 +1,36 @@
+/*App - компонент, в котором формируется отображаемая страница
+Содержит три основных блока с классами:
+header (Новострой блок со ссылками на на главные новости, информационное поле с данными биржи и баннер с рекламой)
+main (Поисковая строка с фильтрами, лого и рекламным большим рекламным баннером)
+footer (Плитка виджитов для отображения дополнительной информации, новостей, сводок)
+
+В качестве источника информации принимаются списки в формате json с объектами в которых поля стандартизированы.
+Основным компонентом для отображения является TextLink, который примает объект и в зависимости от 
+указанного типа отрисовывает ту или иную новость.
+
+CurrentDate отображение текущей даты в формате чч.мммм.гггг
+Filters отрисовывает список заголовков в горизонтали
+Lists отображает список заголовков с картиной при наличии в вертикали
+Adv отрисовка блока с рекламой в виде картинки
+Input поля поисковика с отображением логотипа и большого рекламного баннера
+Cards отрисовывает информацию в виде плиток с заголовком и картинкой, а также
+может отображать иформацию в виде списка
+*/
+
 import './App.css'
-import { LinkInfo } from './components/TextLink'
 import { Filters } from './components/Filters'
+import CurrentDate from './components/widgets/Date'
+import Lists from './components/Lists'
+import filter from './db/ulHeader.json'
+import headerNews from './db/headerNews.json'
+import curency from './db/currency.json'
+import searchFilter from './db/searchFilters.json'
+import forCards from './db/forCards.json'
+import Adv from './components/widgets/Adv'
+import Input from './components/Input'
+import Cards from './components/Cards'
 
-const item: LinkInfo = {
-  title: 'Сейчас в СМИ',
-  titleHref: '#'
-}
 
-const item2: LinkInfo = {
-  title: 'В германии',
-  titleHref: '#'
-}
-
-const item3: LinkInfo = {
-  title: 'Рекомендуем',
-  titleHref: '#'
-}
-
-const newsList = [item, item2, item3]
 
 function App() {
   
@@ -25,54 +38,36 @@ function App() {
   return (
     <>
     <div className='header'>
-      <Filters array={newsList}/>
-      <span className="date">31 июля 2025</span>
+      <div className='news-block'>
+        <div className='header-new'>
+          <Filters array={filter}/>
+          <CurrentDate />
+        </div>
+
+        <div className='news'>
+          <Lists array={headerNews}/>
+        </div>
+      
+        <div className='carrency'>
+          <Filters array={curency}/>
+        </div>
+      </div>
+      
+      <Adv />
+
+    </div>
+       
+    
+    <div className='main'>
+      <Input array={searchFilter}/>
+      <Adv />
     </div>
 
-    <div>
-      <div className='news-block'>
-        <div className='nwes-filter'>
-          <ul className='filters'>
-            <li>Сейчас в СМИ</li>
-            <li>В германии</li>
-            <li>Рекомендуем</li>
-          </ul>
-          <p className='date'>31 июля 2024</p>
-        </div>
-        <div className='news'>
-          <ul>
-            <li>Путин</li>
-            <li>В команде</li>
-            <li>Турпомощ</li>
-            <li>Суд закрыл</li>
-            <li>На украине призвали</li>
-          </ul>
-        </div>
-
-        <ul className='currency'>
-          <li>usd</li>
-          <li>eur</li>
-          <li>нефть</li>
-        </ul>
-      </div>
-      <div>Реклама</div>
+    <div className='footer'>
+      <Cards array={forCards}/>
     </div>  
       
-      <ul className='filters'>
-        <li>Видео</li>
-        <li>Картинки</li>
-        <li>Новости</li>
-        <li>Карты</li>
-        <li>Маркет</li>
-        <li>Переводчик</li>
-        <li>Эфир</li>
-        <li>еще</li>
-      </ul>
-      <input type="text" />
-      <div className='big-banner'>Большой баннер</div>
-      <div className='widgets'>
-        Плитка из виджетов
-      </div>
+      
     </>
   )
 }

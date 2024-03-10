@@ -1,0 +1,29 @@
+[{
+  "title": "Посещаемое",
+  "titleHref": "#",
+  "type": "cardStyle",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png",
+  "description": ["Недвижимость - о сталинках", "Маркет - люсты и светильники", "Авто.ру - привод 4х4 до 500 000"]
+},
+{
+  "title": "Погода",
+  "titleHref": "#",
+  "type": "cardStyle",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png",
+  "description": ["Утром +17", "Днем +20", "Ночью -3"]
+},
+{
+  "title": "Эфир",
+  "titleHref": "#",
+  "type": "cardStyle",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png",
+  "description": ["Управление как искуство", "Ночь. Мир в жто время", "Андрей вознесенский"]
+},
+{
+  "title": "Телепрограмма",
+  "titleHref": "#",
+  "type": "cardStyle",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png",
+  "description": ["02:00 ТНТ Бест", "02:15 Джинглики", "02:25 Наедине со всеми"]
+}
+]

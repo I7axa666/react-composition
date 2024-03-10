@@ -1,0 +1,15 @@
+[{
+  "title": "Сейчас в СМИ",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "В германии",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Рекомендуем",
+  "titleHref": "#",
+  "type": "onlyText"
+}]

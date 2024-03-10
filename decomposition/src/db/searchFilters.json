@@ -1,0 +1,40 @@
+[{
+  "title": "Видео",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Картинки",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Новости",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Карты",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Маркет",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Переводчик",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "Эфир",
+  "titleHref": "#",
+  "type": "onlyText"
+},
+{
+  "title": "еще",
+  "titleHref": "#",
+  "type": "onlyText"
+}]

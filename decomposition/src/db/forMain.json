@@ -1,0 +1,20 @@
+[{
+  "title": "Сейчас в СМИ",
+  "titleHref": "#",
+  "type": "cardStyle",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png",
+  "description": ["Недвижимость - о сталинках", "Маркет - люсты и светильники", "Авто.ру - привод 4х4 до 500 000"]
+},
+{
+  "title": "В германии",
+  "titleHref": "#",
+  "type": "onlyText",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png"
+},
+{
+  "title": "Рекомендуем",
+  "titleHref": "#",
+  "type": "onlyText",
+  "image": "https://e7.pngegg.com/pngimages/574/164/png-clipart-react-computer-icons-redux-javascript-others-symmetry-electron.png"
+}
+]

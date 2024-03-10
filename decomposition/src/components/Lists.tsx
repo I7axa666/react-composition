@@ -3,12 +3,12 @@
 */
 import { TextLink, LinkInfo } from './TextLink'
 
-export function Filters(props: {array: LinkInfo[]}){
+export default function Lists(props: {array: LinkInfo[]}){
   const array = props.array
   return (
-   <ul className='filters'>
+   <ul className='list-news'>
     {array.map((item: LinkInfo, index: number) => (
-      <li key={index}>
+      <li className='new-item' key={index}>
         <TextLink {...item} />
       </li>
     ))}
